@@ -1,9 +1,9 @@
 export const redirects = JSON.parse("{}")
 
 export const routes = Object.fromEntries([
+  ["/", { loader: () => import(/* webpackChunkName: "index.html" */"/home/carlos-eduardo/Documents/suporte-ginfo/docs/.vuepress/.temp/pages/index.html.js"), meta: {"title":"Introdução"} }],
   ["/getting-started/", { loader: () => import(/* webpackChunkName: "getting-started_index.html" */"/home/carlos-eduardo/Documents/suporte-ginfo/docs/.vuepress/.temp/pages/getting-started/index.html.js"), meta: {"title":"Getting started!"} }],
   ["/404.html", { loader: () => import(/* webpackChunkName: "404.html" */"/home/carlos-eduardo/Documents/suporte-ginfo/docs/.vuepress/.temp/pages/404.html.js"), meta: {"title":""} }],
-  ["/", { loader: () => import(/* webpackChunkName: "index.html" */"/home/carlos-eduardo/Documents/suporte-ginfo/docs/.vuepress/.temp/pages/index.html.js"), meta: {"title":"Hello world"} }],
 ]);
 
 if (import.meta.webpackHot) {
